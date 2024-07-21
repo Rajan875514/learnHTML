@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="image.png"width="500px"hight="500px" alt="some problem">
+    <!-- src images name and alt used if not open images than print alt elelement
+     in between used width and hight -->
+     <picture>
+        <source media="(min-width:650)" srcset="image.png"/>
+        <source media="(min-width:450)" srcset="image.png"/>
+        <source media="(min-width:300)" srcset="image.png"/>
+        <img src="image (9).jpeg" alt="no images">
+        <!-- this is use jo size pe hoga ho photo wasie shoe karega on windo kon shoe nahi karega to imag karega -->
+     </picture>
+
+     <!-- create images map generator -->
+      <a href="image-map.net">create images map generator link click</a>
+  onclick="one"
+      <script>
+        function one (){
+            alert("you click one");
+        }
+        function two (){
+            alert("you click two")
+        }
+      </script>
+</body>
+</html>

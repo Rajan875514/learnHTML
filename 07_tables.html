@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            
+        }
+
+        td, th{
+            border: 2px solid black;
+            padding: 10px;
+            }
+            tr:nth-last-child(even){
+                background-color: #b9b9b9;
+            }
+    </style>
+</head>
+<body>
+      <table>
+        <tr>
+            <th>Country</th>
+            <th>Country code</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>IN</td>
+            <td>India@gmail.com</td>
+        </tr>
+        <tr>
+            <td>United States of Ameria</td>
+            <td>USA</td>
+            <td>usa@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>JP</td>
+            <td>japan@gmail.com</td>
+        </tr>
+        <tr>
+            <td>chaina</td>
+            <td>CH</td>
+            <td>chaina@gmail.com</td>
+        </tr>
+      </table><br>
+      <table style="width: min-content;">
+        <tr>
+            <th>Country</th>
+            <td>inaia</td>
+            <td>japan</td>
+        </tr>
+        <tr>
+            <th>Code</th>
+            <td>IN</td>
+            <td>JP</td>
+        </tr>
+      </table>
+      <br>
+      <!-- colspan used -->
+      <table style="width: min-content;">
+        <tr>
+            <th colspan="2">Country</th>
+            <td>inaia</td>
+            <td>japan</td>
+        </tr>
+        <tr>
+            <th>Code</th>
+            <td>IN</td>
+            <td>JP</td>
+        </tr>
+      </table>
+      <!-- tfoot used -->
+       <table>
+             <thead>
+                <tr>
+                    <th>items</th>
+                    <th scope="col">Expenditure</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr>
+                    <th scope="row">Donuts</th>
+                    <td>3,000</td>
+                </tr>
+                <tr>
+                    <th scope="row">Stationery</th>
+                    <td>10,000</td>
+                </tr>
+             </tbody>
+             <tfoot>
+                   <tr>
+                    <th scope="row">Total</th>
+                    <td>21,000</td>
+                   </tr>
+             </tfoot>
+       </table>
+</body>
+</html>
